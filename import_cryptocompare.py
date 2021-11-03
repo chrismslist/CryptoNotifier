@@ -63,10 +63,10 @@ os.system('cls')
 now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
 
-sendNotification("Schedule has been Set","--Program Initiated--")
-print(color+'--Schedule Started at '+current_time+"--"+reset)
+sendNotification("Schedule has been Set","--Program Initiated--") #Send Out Push Notification that Program has Started
+print(color+'--Schedule Started at '+current_time+"--"+reset) #Push message to Console that Program has Started
 
-
+#Hold Python Console while Timer is Running
 while 1:
    schedule.run_pending()
    time.sleep(1)
