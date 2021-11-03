@@ -52,8 +52,8 @@ def scheduleNotifier():
 
 #Set Interval for Schedule and Run that Schedule
 #schedule.every().seconds.do(scheduleNotifier)
-schedule.every(1).minutes.do(scheduleNotifier)
-#schedule.every().hour.do(scheduleNotifier)
+#schedule.every(1).minutes.do(scheduleNotifier)
+schedule.every(1).hour.do(scheduleNotifier)
 #schedule.every().day.at("10:30").do(scheduleNotifier)
 
 #Clear Console Screen
